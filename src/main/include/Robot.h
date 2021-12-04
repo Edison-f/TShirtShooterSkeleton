@@ -14,6 +14,7 @@
 #include "DriveController.h"
 #include "Barrel.h"
 #include "Shooter.h"
+#include "cameraserver/CameraServer.h"
 
 class Robot : public frc::TimedRobot {
  public:

@@ -13,6 +13,8 @@ void Robot::RobotInit() {
   m_chooser.AddOption(kAutoNameCustom, kAutoNameCustom);
   frc::SmartDashboard::PutData("Auto Modes", &m_chooser);
 
+  frc::CameraServer::GetInstance()->StartAutomaticCapture();
+
   controller = new frc::Joystick(0);
   drive = new DriveController();
   barrel = new Barrel();
